@@ -1,0 +1,13 @@
+html {
+    background-color: #F2E3DC;
+    .color_1{
+        border: solid 2px;
+        color: #8F7174;
+        width: 168px;
+        }
+    .p_1{
+        letter-spacing: 0.2em;
+        word-spacing: 1px;
+        line-height: 1.5;
+        }
+    }

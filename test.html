@@ -1,0 +1,18 @@
+$text = '
+	<title>Тег TITLE</title>
+	<h1>Тег H1</h1>
+	<p>Текст 1</p>
+	<p>Текст 2</p>
+';
+ 
+/* <title> */
+preg_match('/<title[^>]*?>(.*?)<\/title>/si', $text, $matches);
+echo $matches[1];
+ 
+/* <h1> */
+preg_match('/<h1[^>]*?>(.*?)<\/h1>/si', $text, $matches);
+echo $matches[1];
+ 
+/* Извлекает текст из всех <p> */
+preg_match_all('/<p[^>]*?>(.*?)<\/p>/si', $text, $matches);
+print_r($matches[1]);
